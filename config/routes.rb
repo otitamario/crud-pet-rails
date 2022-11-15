@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :pets   # create pets resource RESTful urls
+  root 'pets#index' # set root route     
 end
